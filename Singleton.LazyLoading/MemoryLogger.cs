@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sengleton.Eagerloading
+namespace Singleton.LazyLoading
 { 
     public class MemoryLogger
     {
@@ -56,14 +56,14 @@ namespace Sengleton.Eagerloading
             _errorCount = 0;
         }
 
-        // Use a static readonly to initialize the intance once =>eagerLoading
-        private static readonly MemoryLogger _instance = new MemoryLogger();
+        // Use a static readonly to initialize the intance once =>lazyLoading
+        private static readonly Lazy< MemoryLogger> _instance = new Lazy<MemoryLogger>(()=>new MemoryLogger());
 
         public static MemoryLogger Instance
         {
             get
             {
-                return _instance;
+                return _instance.Value;
             }
         }
 
