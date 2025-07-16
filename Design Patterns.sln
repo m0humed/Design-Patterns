@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletoneThreadUnsave", "SingletoneThreadUnsave\SingletoneThreadUnsave.csproj", "{4AE60031-BE3B-4D92-B0E0-0C17F572907C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singletone.ThreadUnsave", "SingletoneThreadUnsave\Singletone.ThreadUnsave.csproj", "{4AE60031-BE3B-4D92-B0E0-0C17F572907C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
