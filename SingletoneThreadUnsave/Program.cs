@@ -16,7 +16,7 @@ namespace SingletoneThreadUnsave
 
         static void AssignVoucher(string email , string code)
         {
-            _memoryLogger = new MemoryLogger();
+            _memoryLogger = MemoryLogger.Instance;
             
             _memoryLogger.LogInfo($"Voucher assigned to {email} with code {code}");
 
@@ -25,8 +25,8 @@ namespace SingletoneThreadUnsave
 
         static void UseVoucher(string email, string code)
         {
-            _memoryLogger = new MemoryLogger();
-            
+            _memoryLogger = MemoryLogger.Instance;
+
             _memoryLogger.LogWarning($"Warning using voucher by {email} with code {code}");
 
             _memoryLogger.LogInfo($"Voucher used by {email} with code {code}");

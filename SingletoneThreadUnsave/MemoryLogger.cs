@@ -44,5 +44,28 @@ namespace Singletone.ThreadUnsave
             Console.WriteLine($"Info: {_infoCount}, Warning: {_warningCount}, Error: {_errorCount}");
         }
 
+        // Apply the Singleton pattern
+        private MemoryLogger()
+        {
+            _infoCount = 0;
+            _warningCount = 0;
+            _errorCount = 0;
+        }
+
+        private static MemoryLogger _instance;
+
+        public static MemoryLogger Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new MemoryLogger();
+                }
+                return _instance;
+            }
+        }
+
+
     }
 }
