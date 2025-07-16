@@ -122,4 +122,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 Feel free to use this project as a personal reference, educational resource, or the base for your own applications.
 
-```
+
