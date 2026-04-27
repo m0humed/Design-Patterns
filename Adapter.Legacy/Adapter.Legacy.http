@@ -1,0 +1,6 @@
+@Adapter.Legacy_HostAddress = http://localhost:5255
+
+GET {{Adapter.Legacy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
