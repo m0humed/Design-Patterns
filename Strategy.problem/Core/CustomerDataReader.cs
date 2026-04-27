@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Strategy.problem.Core;
+
 
 namespace Strategy.problem.Entities
 {
@@ -11,10 +10,10 @@ namespace Strategy.problem.Entities
         { 
             return new List<Customer>
             {
-                new Customer { Id = 1 , Name = "Kory" },
-                new Customer { Id = 2 , Name = "Ali" },
-                new Customer { Id = 3 , Name = "Rabai" },
-                new Customer { Id = 4 , Name = "Somaa" }
+                new Customer { Id = 1 , Name = "Kory" , CustomerType =  CustomerType.Gold},
+                new Customer { Id = 2 , Name = "Ali" , CustomerType =  CustomerType.Selver},
+                new Customer { Id = 3 , Name = "Rabai" , CustomerType =  CustomerType.New },
+                new Customer { Id = 4 , Name = "Somaa" , CustomerType =  CustomerType.Selver }
             }
             ; 
         

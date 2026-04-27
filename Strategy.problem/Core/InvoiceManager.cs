@@ -8,13 +8,13 @@ namespace Strategy.problem.Core
 {
     public class InvoiceManager
     {
-        public ICustomerDescountStratigy customerDescountStratigy { get; set; }
+        public ICustomerDescountStratigy customerDescountStratigy { get; set; } = null!;
 
         public Invoice CreateInvoice(Customer customer , double quantity , double unitPrice)
         {
             if (customerDescountStratigy is null)
             {
-                throw new InvalidOperationException("Customer discount strategy is not set.");
+                customerDescountStratigy = new NewCustomerDescountStratigy (); 
             }
 
             var invoice = new Invoice
