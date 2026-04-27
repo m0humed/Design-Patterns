@@ -365,4 +365,7 @@ FodyWeavers.xsd
 
 .dotnet_home/
 build*
+*.jpg
+*.png
+*.bmp
 
